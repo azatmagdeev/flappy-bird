@@ -1,0 +1,19 @@
+dist: trusty
+language: node_js
+node_js:
+  - 10
+install:
+  - npm i
+  - npm i codecov
+after_success:
+  - npm run coverage && npx codecov
+  - mkdir dist
+  - cp -R src/index.html src/js src/css src/img dist
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: dist
+  on:
+    branch: master
