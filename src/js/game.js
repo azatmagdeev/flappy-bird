@@ -25,10 +25,12 @@ pipe[0] = {
 
 
 document.addEventListener("keydown", moveUp);
+document.addEventListener('touchstart', moveUp);
 
 function moveUp() {
     birdY -= 20;
 }
+
 
 
 let score = 0;
