@@ -1,0 +1,29 @@
+#canvas {
+
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#restart {
+    display: none;
+    position: absolute;
+   width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(lightgreen,green);
+    color: white;
+    border-style: double;
+font-size: 20px;
+    font-family: Verdana, cursive;
+
+}
