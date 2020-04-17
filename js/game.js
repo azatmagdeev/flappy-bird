@@ -37,7 +37,8 @@ function moveUp() {
     birdY -= 20;
 }
 
-document.addEventListener("keydown" || "touchstart", moveUp);
+document.addEventListener("keydown" , moveUp);
+document.addEventListener("touchstart" , moveUp);
 
 function draw() {
 
