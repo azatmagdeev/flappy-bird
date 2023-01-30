@@ -22,7 +22,7 @@ let topScore = localStorage.getItem('top');
 if (!topScore) topScore = 0;
 
 const pipe = [];
-let gap = 150;
+let gap = 100;
 
 pipe[0] = {
     x: cvs.width,
