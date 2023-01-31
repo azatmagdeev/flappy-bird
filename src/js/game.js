@@ -16,7 +16,7 @@ pipeBottom.src = "img/pipeBottom.png";
 pipeBottom.onload = draw;
 
 let bump = false;
-let speed = 1;
+let speed = 1.9;
 let score = 0;
 let topScore = localStorage.getItem('top');
 if (!topScore) topScore = 0;
@@ -28,13 +28,13 @@ pipe[0] = {
     x: cvs.width,
     y: -100,
 };
-
+  
 let birdX = 10;
 let birdY = 150;
-let gravity = 0.5;
+let gravity = 1;
 
 function moveUp() {
-    birdY -= 20;
+    birdY -= 30;
 }
 
 document.addEventListener("keydown" , moveUp);
@@ -66,7 +66,7 @@ function drawPipes() {
         ctx.drawImage(pipeBottom, pipe[i].x,
             pipe[i].y + pipeUp.height + gap);
 
-        pipe[i].x = pipe[i].x - speed;
+        pipe[i].x = pipe[i].x - Math.round(speed);   
 
         if (pipe[i].x === 10) {
             pipe.push({

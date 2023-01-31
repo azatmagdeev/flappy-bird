@@ -4,22 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server src",
-    "test": "exit 0",
-    "coverage": "jest --coverage"
+    "dev": "live-server src",
+    "test": "exit 0"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
-    "live-server": "^1.2.1"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.4.4",
-    "core-js": "^3.1.4"
+    "live-server": "^1.1.0"
   }
 }
